@@ -126,14 +126,14 @@
 				"drops": [
 					{
 						"type": "item",
-						"code": "game:redmeat-raw",
+						"code": "game:bushmeat-raw",
 						"quantityByType": {
-							"*-spinosaurus-adult-*": {"avg": 150,"var": 10}, "*-spinosaurus-baby-*": {"avg": 5,"var": 3},
-							"*-oxalaia-adult-*": {"avg": 140,"var": 10}, "*-oxalaia-baby-*": {"avg": 5,"var": 3},
-							"*-baryonyx-adult-*": {"avg": 130,"var": 10}, "*-baryonyx-baby-*": {"avg": 5,"var": 3},
-							"*-suchomimus-adult-*": {"avg": 120,"var": 10}, "*-suchomimus-baby-*": {"avg": 5,"var": 3},
-							"*-ichthyovenator-adult-*": {"avg": 120,"var": 10}, "*-ichthyovenator-baby-*": {"avg": 5,"var": 3},
-							"*-irritator-adult-*": {"avg": 100,"var": 10}, "*-irritator-baby-*": {"avg": 5,"var": 3},
+							"*-spinosaurus-adult-*": {"avg": 50,"var": 10}, "*-spinosaurus-baby-*": {"avg": 4,"var": 1},
+							"*-oxalaia-adult-*": {"avg": 40,"var": 10}, "*-oxalaia-baby-*": {"avg": 3,"var": 1},
+							"*-baryonyx-adult-*": {"avg": 30,"var": 10}, "*-baryonyx-baby-*": {"avg": 3,"var": 1},
+							"*-suchomimus-adult-*": {"avg": 20,"var": 10}, "*-suchomimus-baby-*": {"avg": 3,"var": 1},
+							"*-ichthyovenator-adult-*": {"avg": 20,"var": 10}, "*-ichthyovenator-baby-*": {"avg": 2,"var": 1},
+							"*-irritator-adult-*": {"avg": 10,"var": 10}, "*-irritator-baby-*": {"avg": 2,"var": 1},
 
 						}
 					},
@@ -249,7 +249,8 @@
                         "damageType": "SlashingAttack",
                         "knockbackStrengthByType": {
 							"*-baby-*":1,
-							"*-adult-*": 1,
+							"*-adult-*": 3,
+							"*-irritator-adult-male": 2,
 							},
                         "damageTierByType": {
 							"*-baby-*":1,
