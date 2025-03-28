@@ -1,0 +1,79 @@
+﻿{
+  "code": "creature",
+  "class": "ItemCreature",
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ 
+	  "spinosauridae-spinosaurus-adult-male","spinosauridae-spinosaurus-adult-female", "spinosauridae-spinosaurus-baby-male", "spinosauridae-spinosaurus-baby-female","spinosauridae-spinosaurus-nest-mature","spinosauridae-spinosaurus-nest-incubating","spinosauridae-spinosaurus-nest-empty",
+
+	  "spinosauridae-oxalaia-adult-male","spinosauridae-oxalaia-adult-female", "spinosauridae-oxalaia-baby-male", "spinosauridae-oxalaia-baby-female","spinosauridae-oxalaia-nest-mature","spinosauridae-oxalaia-nest-incubating","spinosauridae-oxalaia-nest-empty",
+
+	  "spinosauridae-suchomimus-adult-male","spinosauridae-suchomimus-adult-female", "spinosauridae-suchomimus-baby-male", "spinosauridae-suchomimus-baby-female","spinosauridae-suchomimus-nest-mature","spinosauridae-suchomimus-nest-incubating","spinosauridae-suchomimus-nest-empty",
+
+	  "spinosauridae-baryonyx-adult-male","spinosauridae-baryonyx-adult-female", "spinosauridae-baryonyx-baby-male", "spinosauridae-baryonyx-baby-female","spinosauridae-baryonyx-nest-mature","spinosauridae-baryonyx-nest-incubating","spinosauridae-baryonyx-nest-empty",
+
+	  "spinosauridae-ichthyovenator-adult-male","spinosauridae-ichthyovenator-adult-female", "spinosauridae-ichthyovenator-baby-male", "spinosauridae-ichthyovenator-baby-female","spinosauridae-ichthyovenator-nest-mature","spinosauridae-ichthyovenator-nest-incubating","spinosauridae-ichthyovenator-nest-empty",
+
+	  "spinosauridae-irritator-adult-male","spinosauridae-irritator-adult-female", "spinosauridae-irritator-baby-male", "spinosauridae-irritator-baby-female","spinosauridae-irritator-nest-mature","spinosauridae-irritator-nest-incubating","spinosauridae-irritator-nest-empty",
+	  ]
+    }
+  ],
+  "shapeByType": {
+	"*-spinosaurus-adult-*":{"base": "entity/land/spinosauridae/spinosaurus/adult"},"*-spinosaurus-baby-*":{"base": "entity/land/spinosauridae/spinosaurus/baby"},
+	"*-oxalaia-adult-*":{"base": "entity/land/spinosauridae/oxalaia/adult"},"*-oxalaia-baby-*":{"base": "entity/land/spinosauridae/oxalaia/baby"},
+	"*-suchomimus-adult-*":{"base": "entity/land/spinosauridae/suchomimus/adult"},"*-suchomimus-baby-*":{"base": "entity/land/spinosauridae/suchomimus/baby"},
+	"*-baryonyx-adult-*":{"base": "entity/land/spinosauridae/baryonyx/adult"},"*-baryonyx-baby-*":{"base": "entity/land/spinosauridae/baryonyx/baby"},
+	"*-ichthyovenator-adult-*":{"base": "entity/land/spinosauridae/ichthyovenator/adult"},"*-ichthyovenator-baby-*":{"base": "entity/land/spinosauridae/ichthyovenator/baby"},
+	"*-irritator-adult-*":{"base": "entity/land/spinosauridae/irritator/adult"},"*-irritator-baby-*":{"base": "entity/land/spinosauridae/irritator/baby"},
+	 "*-nest-*":{"base": "entity/land/nest"},"*-nest-empty":{"base": "entity/land/nest-empty"},
+  },
+  "textureByType": { 
+	"*-spinosaurus-adult-*":{"base": "entity/spinosaurus-adult"},"*-spinosaurus-baby-*":{"base": "entity/spinosaurus-adult"},
+	"*-oxalaia-adult-*":{"base": "entity/oxalaia-adult"},"*-oxalaia-baby-*":{"base": "entity/oxalaia-adult"},
+	"*-suchomimus-adult-*":{"base": "entity/suchomimus-adult"},"*-suchomimus-baby-*":{"base": "entity/suchomimus-adult"},
+	"*-baryonyx-adult-*":{"base": "entity/baryonyx-adult"},"*-baryonyx-baby-*":{"base": "entity/baryonyx-adult"},
+	"*-ichthyovenator-adult-*":{"base": "entity/ichthyovenator-adult"},"*-ichthyovenator-baby-*":{"base": "entity/ichthyovenator-adult"},
+	"*-irritator-adult-*":{"base": "entity/irritator-adult"},"*-irritator-baby-*":{"base": "entity/irritator-adult"},
+  },
+  "creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"creature-spinosauridae-*": {
+			"rotate": true,
+			"translation": { "x": -16, "y": 0, "z": -5 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.3
+		},
+		"spinosauridae:creature-spinosauridae-{type}-baby-*": {
+			"rotate": true,
+			"translation": { "x": -16, "y": 0, "z": -5 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.5
+		}
+	},
+
+	"tpHandTransformByType": {
+		"spinosauridae:creature-spinosauridae-{type}-adult-*": {
+			"translation": { "x": -2, "y": -4, "z": -2 },
+			"rotation": { "x": -180, "y": 0, "z": -156 },
+			"scale": 0.15
+		},
+		"spinosauridae:creature-spinosauridae-{type}-baby-*": {
+			"translation": { "x": -0.5, "y": -0.5, "z": -0.5 },
+			"rotation": { "x": -180, "y": 0, "z": -100 },
+			"origin": { "x": 0, "y": 0, "z": 0 },
+			"scale": 0.25
+		},
+	},
+
+	"fpHandTransformByType": {
+		"creature-spinosauridae-*": {
+			"translation": { "x": 0.2, "y": 0, "z": 0 },
+			"rotation": { "x": -8, "y": -63, "z": -7 }
+		}
+	}
+}

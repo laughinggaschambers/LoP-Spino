@@ -1,0 +1,98 @@
+[
+ {
+    "file": "spinosauridae:entities/land/spinosauridae.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*-spinosaurus-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic paleartic"
+        ]
+      },
+      "*-oxalaia-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic neotropic"
+        ]
+      },
+      "*-suchomimus-*": {
+        "biorealm": [
+          "eastern afrotropic",
+          "atlantic paleartic"
+        ]
+      },
+      "*-baryonyx-*": {
+        "biorealm": [
+          "atlantic paleartic"
+        ]
+      },
+      "*-ichthyovenator-*": {
+        "biorealm": [
+          "eastern paleartic",
+          "central paleartic"
+        ]
+      },
+      "*-irritator-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic neotropic"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "spinosauridae:entities/land/nest.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*-spinosaurus-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic paleartic"
+        ]
+      },
+      "*-oxalaia-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic neotropic"
+        ]
+      },
+      "*-suchomimus-*": {
+        "biorealm": [
+          "eastern afrotropic",
+          "atlantic paleartic"
+        ]
+      },
+      "*-baryonyx-*": {
+        "biorealm": [
+          "atlantic paleartic"
+        ]
+      },
+      "*-ichthyovenator-*": {
+        "biorealm": [
+          "eastern paleartic",
+          "central paleartic"
+        ]
+      },
+      "*-irritator-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic neotropic"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+]

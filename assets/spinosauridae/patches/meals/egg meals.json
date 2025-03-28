@@ -1,0 +1,253 @@
+[
+  {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-spinosaurus-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-spinosaurus-egg-raw",
+      "shapeElement": "bowl/egg/*", 
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-spinosaurus-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-spinosaurus-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+
+  {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-oxalaia-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-oxalaia-egg-raw",
+      "shapeElement": "bowl/egg/*",
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-oxalaia-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-oxalaia-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+
+
+  {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-suchomimus-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-suchomimus-egg-raw",
+      "shapeElement": "bowl/egg/*",
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-suchomimus-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-suchomimus-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+  {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-baryonyx-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-baryonyx-egg-raw",
+      "shapeElement": "bowl/egg/*",
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-baryonyx-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-baryonyx-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+  {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-ichthyovenator-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-ichthyovenator-egg-raw",
+      "shapeElement": "bowl/egg/*",
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-ichthyovenator-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-ichthyovenator-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+
+   {
+    "file": "game:recipes/cooking/meatystew",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-irritator-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    }
+  },
+  {
+    "file": "game:recipes/cooking/scrambledeggs",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-irritator-egg-raw",
+      "shapeElement": "bowl/egg/*",
+      "textureMapping": ["scrambledegg", "group7"]
+    }
+  },
+  {
+    "file": "game:recipes/cooking/soup",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "spinosauridae:creature-spinosauridae-irritator-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    }
+  },
+  {
+    "file": "game:blocktypes/clay/pot",
+    "side": "server",
+    "op": "addmerge",
+    "path": "/attributesByType/claypot-cooked/textureMapping/spinosauridae:creature-spinosauridae-irritator-egg-raw",
+    "value": [ "meat", "group6" ]
+  },
+
+]

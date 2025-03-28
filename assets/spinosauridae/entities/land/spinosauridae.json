@@ -1,0 +1,863 @@
+{
+    "code": "spinosauridae",
+    "class": "EntityAgent",
+	"variantgroups": [
+        {"code": "type","states": ["spinosaurus","oxalaia","suchomimus","baryonyx","ichthyovenator","irritator"]},
+        {"code": "age","states": [ "adult","baby"]},
+        {"code": "gender","states": ["male","female"]},
+    ],
+    "fallDamageMultiplierByType": { "*-baby-*" :1,"*-adult-*" :6},
+    "hitBoxSizeByType": {
+			"*-spinosaurus-adult-male": {"x": 3,"y": 5},"*-spinosaurus-adult-female": {"x": 3,"y": 5},"*-spinosaurus-baby-*": {"x": 0.7,"y": 0.7},
+			"*-oxalaia-adult-male": {"x": 3,"y": 4.5},"*-oxalaia-adult-female": {"x": 3,"y": 4.5},"*-oxalaia-baby-*": {"x": 0.7,"y": 0.7},
+			"*-suchomimus-adult-male": {"x": 3,"y": 4},"*-suchomimus-adult-female": {"x": 3,"y": 4},"*-suchomimus-baby-*": {"x": 0.7,"y": 0.7},
+			"*-baryonyx-adult-male": {"x": 3,"y": 4},"*-baryonyx-adult-female": {"x": 3,"y": 4},"*-baryonyx-baby-*": {"x": 0.7,"y": 0.7},
+			"*-ichthyovenator-adult-male": {"x": 3,"y": 3.5},"*-ichthyovenator-adult-female": {"x": 3,"y": 3.5},"*-ichthyovenator-baby-*": {"x": 0.7,"y": 0.7},
+			"*-irritator-adult-male": {"x": 3,"y": 3},"*-irritator-adult-female": {"x": 3,"y": 3},"*-irritator-baby-*": {"x": 0.7,"y": 0.7},
+		},
+
+    "deadhitBoxSizeByType": {"*-adult-*":{	"x": 3,"y": 3},"*-baby-*":{	"x": 1,"y": 1}},
+    "eyeHeightByType": {"*":3},
+    "weightByType": {"*-adult-*":4000,"*-baby-*":10},
+    "knockbackResistanceByType": {"*-adult-*": 2,"*-baby-*": 1	},
+
+    "drops": [],
+    "attributes": {
+		"tamedByType": {"*": false },
+		"killedByInfoText": "deadcreature-killed",
+		"handbook": {"groupcode": "creaturegroup-spinosauridae"},
+		"minGenerationToAllowHealing": 0,
+		"creatureDiet": {
+			"foodCategories": ["Protein"],
+			"foodTags": ["meat","fish"]
+		},
+	},
+
+
+    "client": {
+        "renderer": "Shape",
+        "shapeByType": {
+			"*-spinosaurus-adult-*":{"base": "entity/land/spinosauridae/spinosaurus/adult"},"*-spinosaurus-baby-*":{"base": "entity/land/spinosauridae/spinosaurus/baby"},
+			"*-oxalaia-adult-*":{"base": "entity/land/spinosauridae/oxalaia/adult"},"*-oxalaia-baby-*":{"base": "entity/land/spinosauridae/oxalaia/baby"},
+			"*-suchomimus-adult-*":{"base": "entity/land/spinosauridae/suchomimus/adult"},"*-suchomimus-baby-*":{"base": "entity/land/spinosauridae/suchomimus/baby"},
+			"*-baryonyx-adult-*":{"base": "entity/land/spinosauridae/baryonyx/adult"},"*-baryonyx-baby-*":{"base": "entity/land/spinosauridae/baryonyx/baby"},
+			"*-ichthyovenator-adult-*":{"base": "entity/land/spinosauridae/ichthyovenator/adult"},"*-ichthyovenator-baby-*":{"base": "entity/land/spinosauridae/ichthyovenator/baby"},
+			"*-irritator-adult-*":{"base": "entity/land/spinosauridae/irritator/adult"},"*-irritator-baby-*":{"base": "entity/land/spinosauridae/irritator/baby"},
+		},
+         "textureByType": {
+            "*-spinosaurus-adult-*":{"base": "entity/spinosaurus-adult"},"*-spinosaurus-baby-*":{"base": "entity/spinosaurus-adult"},
+            "*-oxalaia-adult-*":{"base": "entity/oxalaia-adult"},"*-oxalaia-baby-*":{"base": "entity/oxalaia-adult"},
+            "*-suchomimus-adult-*":{"base": "entity/suchomimus-adult"},"*-suchomimus-baby-*":{"base": "entity/suchomimus-adult"},
+            "*-baryonyx-adult-*":{"base": "entity/baryonyx-adult"},"*-baryonyx-baby-*":{"base": "entity/baryonyx-adult"},
+            "*-ichthyovenator-adult-*":{"base": "entity/ichthyovenator-adult"},"*-ichthyovenator-baby-*":{"base": "entity/ichthyovenator-adult"},
+            "*-irritator-adult-*":{"base": "entity/irritator-adult"},"*-irritator-baby-*":{"base": "entity/irritator-adult"},
+        },
+        "sizeByType": {
+			"*-spinosaurus-adult-male": 1.0,"*-spinosaurus-adult-female": 0.9,"*-spinosaurus-baby-*": 1.0,
+			"*-oxalaia-adult-male": 0.9,"*-oxalaia-adult-female": 0.8,"*-oxalaia-baby-*": 0.9,
+			"*-suchomimus-adult-male": 0.85,"*-suchomimus-adult-female": 0.75,"*-suchomimus-baby-*": 0.85,
+			"*-baryonyx-adult-male": 0.8,"*-baryonyx-adult-female": 0.7,"*-baryonyx-baby-*": 0.8,
+			"*-ichthyovenator-adult-male": 0.7,"*-ichthyovenator-adult-female": 0.6,"*-ichthyovenator-baby-*": 0.7,
+			"*-irritator-adult-male": 0.6,"*-irritator-adult-female": 0.5,"*-irritator-baby-*": 0.6,
+		},
+        "behaviors": [
+			{"code": "mortallywoundable", "enabledByType": { "*-baby-*": false, "*": false},"minGeneration": 2 },
+            {"code": "repulseagents" },
+			{"code": "controlledphysics","stepHeightByType":
+				{
+				"*-baby-*":1.1251,
+				"*-adult-*": 1.5,
+				"*-spinosaurus-adult-*": 2,
+				"*-oxalaia-adult-*": 2,
+				}
+			},
+			{"code": "floatupwhenstuck","onlyWhenDead": true},
+			{"code": "interpolateposition" },
+			{"code": "harvestable","quantitySlots": 8},
+			{"code": "multiply", "enabledByType": { "*-adult-female": true, "*": false } },
+			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
+			{"code": "ropetieable","minGeneration": 4},
+        ],
+        "animations": [
+            {"code": "attack","animation": "Attack","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
+            {"code": "die","animation": "Die","easeInSpeed": 3,"animationSpeed": 1,"weight": 10,"blendMode": "Average","triggeredBy": {"onControls": ["dead"]}},
+            {"code": "eat","animation": "Eat","easeInSpeed": 4,"easeOutSpeed": 4,"blendMode": "Average"},
+            {"code": "run","animation": "Run","easeInSpeed": 10,"easeOutSpeed": 2,"supressDefaultAnimation": true,"blendMode": "Average"},
+            {"code": "hurt","animation": "Hurt","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
+            {"code": "idle","animation": "Idle","animationSpeed": 0.5,"blendMode": "AddAverage","easeOutSpeed": 4,"triggeredBy": {"defaultAnim": true}},
+            {"code": "look","animation": "Look","blendMode": "AddAverage","easeOutSpeed": 0.25},
+            {"code": "alert","animation": "Alert","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
+            {"code": "roar","animation": "Roar","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
+            {"code": "sit","animation": "Sit","easeInSpeed": 0.1,"easeOutSpeed": 0.5,"blendMode": "Average"},
+            {"code": "lie","animation": "Lie","easeInSpeed": 0.1,"easeOutSpeed": 0.5,"weight": 10,"blendMode": "Average"},
+            {"code": "sleep","animation": "Sleep","easeInSpeed": 2,"easeOutSpeed": 2,"weight": 5,"blendMode": "Average"},
+            {"code": "swim","animation": "Swim","supressDefaultAnimation": true,"blendMode": "Average"},
+            {"code": "walk","animation": "Walk","easeInSpeed": 1,"supressDefaultAnimation": true,"blendMode": "Average"},
+            {"code": "leap","animation": "Leap","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
+        ]
+    },
+    "server": {
+		"attributes": {"pathfinder": {"minTurnAnglePerSec": 350,"maxTurnAnglePerSec": 650}},
+        "behaviors": [
+            {"code": "repulseagents" },
+            {"code": "controlledphysics","stepHeightByType":
+				{
+				"*-baby-*":1.1251,
+				"*-adult-*": 1.5,
+				"*-spinosaurus-adult-*": 2,
+				"*-oxalaia-adult-*": 2,
+				}
+			},
+            {"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
+            {"code": "floatupwhenstuck","onlyWhenDead": true},
+            {"code": "health",
+                    "maxhealthByType": {
+                        "*-spinosaurus-adult-male": 200,"*-spinosaurus-adult-female": 200,"*-spinosaurus-baby-*": 15,
+                        "*-oxalaia-adult-male": 190,"*-oxalaia-adult-female": 180,"*-oxalaia-baby-*": 14,
+                        "*-suchomimus-adult-male": 180,"*-suchomimus-adult-female": 170,"*-suchomimus-baby-*": 13,
+                        "*-baryonyx-adult-male": 170,"*-baryonyx-adult-female": 170,"*-baryonyx-baby-*": 12,
+                        "*-ichthyovenator-adult-male": 170,"*-ichthyovenator-adult-female": 170,"*-ichthyovenator-baby-*": 12,
+                        "*-irritator-adult-male": 160,"*-irritator-adult-female": 150,"*-irritator-baby-*": 11,
+                    }
+			},
+            {"code": "deaddecay","hoursToDecay": 96,"decayedBlockByType": {"*-adult-*": "carcass-large","*-baby-*": "carcass-small"}},
+            {"code": "harvestable",
+				"quantitySlots": 8,
+				"drops": [
+					{
+						"type": "item",
+						"code": "game:redmeat-raw",
+						"quantityByType": {
+							"*-spinosaurus-adult-*": {"avg": 150,"var": 10}, "*-spinosaurus-baby-*": {"avg": 5,"var": 3},
+							"*-oxalaia-adult-*": {"avg": 140,"var": 10}, "*-oxalaia-baby-*": {"avg": 5,"var": 3},
+							"*-baryonyx-adult-*": {"avg": 130,"var": 10}, "*-baryonyx-baby-*": {"avg": 5,"var": 3},
+							"*-suchomimus-adult-*": {"avg": 120,"var": 10}, "*-suchomimus-baby-*": {"avg": 5,"var": 3},
+							"*-ichthyovenator-adult-*": {"avg": 120,"var": 10}, "*-ichthyovenator-baby-*": {"avg": 5,"var": 3},
+							"*-irritator-adult-*": {"avg": 100,"var": 10}, "*-irritator-baby-*": {"avg": 5,"var": 3},
+
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:fat",
+						"quantityByType": {
+							"*-spinosaurus-adult-*": {"avg": 15,"var": 5}, "*-spinosaurus-baby-*": {"avg": 1,"var": 1},
+							"*-oxalaia-adult-*": {"avg": 14,"var": 10}, "*-oxalaia-baby-*": {"avg": 1,"var": 1},
+							"*-baryonyx-adult-*": {"avg": 13,"var": 10}, "*-baryonyx-baby-*": {"avg": 1,"var": 1},
+							"*-suchomimus-adult-*": {"avg": 12,"var": 10}, "*-suchomimus-baby-*": {"avg": 1,"var": 1},
+							"*-ichthyovenator-adult-*": {"avg": 12,"var": 10}, "*-ichthyovenator-baby-*": {"avg": 1,"var": 1},
+							"*-irritator-adult-*": {"avg": 10,"var": 10}, "*-irritator-baby-*": {"avg": 1,"var": 1},
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:hide-raw-huge",
+						"quantityByType": {
+							"*-spinosaurus-adult-*": {"avg": 5,"var": 0}, "*-spinosaurus-baby-*": {"avg": 0,"var": 0},
+							"*-oxalaia-adult-*": {"avg": 4,"var": 0}, "*-oxalaia-baby-*": {"avg": 0,"var": 0},
+							"*-baryonyx-adult-*": {"avg": 3,"var": 0}, "*-baryonyx-baby-*": {"avg": 0,"var": 0},
+							"*-suchomimus-adult-*": {"avg":2,"var": 0}, "*-suchomimus-baby-*": {"avg": 0,"var": 0},
+							"*-ichthyovenator-adult-*": {"avg": 2,"var": 0}, "*-ichthyovenator-baby-*": {"avg": 0,"var": 0},
+							"*-irritator-adult-*": {"avg": 1,"var": 0}, "*-irritator-baby-*": {"avg": 0,"var": 0},
+						}
+					},
+					{
+						"type": "item",
+						"code": "game:hide-raw-small",
+						"quantityByType": {
+							"*-baby-*": {"avg": 1.0,"var": 0.0},
+							"*": {"avg": 0.0,"var": 0.0}
+						}
+					},
+				]
+			},
+			{"code": "multiply",
+				"enabledByType": {
+					"*-adult-female": true,
+					"*": false
+				},
+				"spawnEntityCodesByType": {
+					"*": [ { "code":"spinosauridae:spinosauridae-{type}-egg-raw"}]},
+				"requiresNearbyEntityCodeByType": {
+					"*-adult-female": "spinosauridae:spinosauridae-{type}-adult-male"},
+				"requiresNearbyEntityRange": 20,
+				"spawnQuantityMin": 6,
+				"spawnQuantityMaxByType": {"*": 12},
+				"pregnancyDaysByType": {"*": 30},
+				"multiplyCooldownDaysMinByType": {"*": 30},
+				"multiplyCooldownDaysMaxByType": {"*": 70},
+				"portionsEatenForMultiplyByType": {"*": 15}
+			},
+            {"code": "grow",
+					"enabledByType": {
+					"*-baby-*": true,
+					"*": false
+				},
+				"hoursToGrowByType": {"*": 150},
+				"adultEntityCodesByType": {
+					"*-baby-male": ["spinosauridae:spinosauridae-{type}-adult-male"],
+					"*-baby-female": ["spinosauridae:spinosauridae-{type}-adult-female"]
+				}
+			},
+			{"code": "emotionstates",
+				"states": [
+					{"code": "aggressiveondamage","duration": 60,"chanceByType": {"*-adult-*": 1,"*-baby-*": 0.0},"slot": 2,"priority": 3,"accumType": "noaccum"},
+					{"code": "fleeondamage","duration": 60,"slot": 2,"chanceByType": {"*-adult-*": 1,"*-baby-*": 1},"priority": 2,"accumType": "max","whenHealthRelBelow": 0.75},
+					{"code": "fleeondamage","duration": 30,"slot": 2,"chanceByType": {"*-adult-*": 0.0,"*-baby-*": 1},"priority": 0.75,"accumType": "max","whenHealthRelBelow": 1},
+					{"code": "alarmherdondamage","chance": 1,"slot": 1,"priority": 1.5,"accumType": "max"},
+					{"code": "saturated","duration": 1200,"chance": 1,"slot": 0,"priority": 1,"accumType": "sum"},
+					{ "code": "aggressivearoundentities", "duration": 60, "chanceByType": {"*-baby-*": 0.0,"*-adult-*": 1.0}, "slot": 2, "priority": 5, "entityCodes": ["spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female"], "maxGeneration": 5 }
+				]
+			},
+			{"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+                        "code": "meleeattack",
+                        "animation": "Attack",
+                        "entityCodesByType": {
+							"*-adult-*":
+								[
+									"player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
+
+									"ceratopsidae-*", "tyrannosauridae-*",
+
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
+							"*-baby-*":
+								[
+									"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
+
+									"*-baby-*",
+
+									"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
+								],
+
+							},
+                        "priority": 1.9,
+                        "slot": 1,
+                        "damageByType": {
+							"*-spinosaurus-adult-male": 20,"*-spinosaurus-adult-female": 19,"*-spinosaurus-baby-*": 3,
+							"*-oxalaia-adult-male": 19,"*-oxalaia-adult-female": 18,"*-oxalaia-baby-*": 2.5,
+							"*-baryonyx-adult-male": 18,"*-baryonyx-adult-female": 17,"*-baryonyx-baby-*": 2.5,
+							"*-suchomimus-adult-male": 17,"*-suchomimus-adult-female": 16,"*-suchomimus-baby-*": 2,
+							"*-ichthyovenator-adult-male": 17,"*-ichthyovenator-adult-female": 16,"*-ichthyovenator-baby-*": 2,
+							"*-irritator-adult-male": 16,"*-irritator-adult-female": 15,"*-irritator-baby-*": 1.5,
+                        },
+                        "damageType": "SlashingAttack",
+                        "knockbackStrengthByType": {
+							"*-baby-*":1,
+							"*-adult-*": 1,
+							},
+                        "damageTierByType": {
+							"*-baby-*":1,
+							"*-tyrannosaurus-adult-*": 3,
+							},
+                        "mincooldown": 1250,
+                        "maxcooldown": 1500,
+                        "minDistByType": {
+							"*-baby-*":1,
+							"*-adult-*": 5,
+							},
+                        "minVerDistByType": {
+							"*-baby-*":1,
+							"*-adult-*": 3,
+							},
+                        "attackAngleRangeDeg": 90,
+                        "attackDurationMs": 1250,
+                        "damagePlayerAtMs": 500,
+                        "animationSpeed": 1,
+                        "soundByType": {"*-adult-*":"creature/death","*-baby-*":"creature/death",},
+						"whenNotInEmotionState": "aggressiveondamage|aggressivearoundentities",
+					},
+					{
+                        "code": "meleeattack",
+                        "animation": "Attack",
+                        "entityCodesByType": {
+							"*-adult-*":
+								[
+									"player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
+
+									"ceratopsidae-*", "tyrannosauridae-*",
+
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
+							"*-baby-*":
+								[
+									"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
+
+									"*-baby-*",
+
+									"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
+								],
+
+							},
+                        "priority": 1.9,
+                        "slot": 1,
+                        "damageByType": {
+							"*-spinosaurus-adult-male": 20,"*-spinosaurus-adult-female": 19,"*-spinosaurus-baby-*": 3,
+							"*-oxalaia-adult-male": 19,"*-oxalaia-adult-female": 18,"*-oxalaia-baby-*": 2.5,
+							"*-baryonyx-adult-male": 18,"*-baryonyx-adult-female": 17,"*-baryonyx-baby-*": 2.5,
+							"*-suchomimus-adult-male": 17,"*-suchomimus-adult-female": 16,"*-suchomimus-baby-*": 2,
+							"*-ichthyovenator-adult-male": 17,"*-ichthyovenator-adult-female": 16,"*-ichthyovenator-baby-*": 2,
+							"*-irritator-adult-male": 16,"*-irritator-adult-female": 15,"*-irritator-baby-*": 1.5,
+                        },
+                        "damageType": "SlashingAttack",
+                        "knockbackStrengthByType": {
+							"*-baby-*":1,
+							"*-adult-*": 1,
+							},
+                        "damageTierByType": {
+							"*-baby-*":1,
+							"*-spinosaurus-adult-*": 3,
+							},
+                        "mincooldown": 1250,
+                        "maxcooldown": 1500,
+                        "minDistByType": {
+							"*-baby-*":1,
+							"*-adult-*": 5,
+							},
+                        "minVerDistByType": {
+							"*-baby-*":1,
+							"*-adult-*": 3,
+							},
+                        "attackAngleRangeDeg": 90,
+                        "attackDurationMs": 1250,
+                        "damagePlayerAtMs": 500,
+                        "animationSpeed": 1,
+                        "soundByType": {"*-adult-*":"creature/death","*-baby-*":"creature/death",},
+						"whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+					},
+					{
+						"code": "seekentity",
+						"animation": "Run",
+						"entityCodesByType": {
+							"*-adult-*":[
+											"player","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
+
+											"cervidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "vombatidae-*", "capreolinae-*",
+											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
+											"chelonoidis-*",
+										],
+							"*-baby-*":[
+											"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
+
+											"*-baby-*",
+
+											"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
+											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
+									],
+							},
+						"priority": 1.82,
+						"seekingRange": 50,
+						"belowTempSeekingRange": 30,
+						"movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+						"whenNotInEmotionState": "fleeondamage|saturated",
+					},
+					{
+						"code": "seekentity",
+						"animation": "Run",
+						"entityCodesByType": {
+							"*-adult-*":[
+											"player","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
+
+
+											"cervidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "vombatidae-*", "capreolinae-*",
+											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
+											"chelonoidis-*",
+										],
+							"*-baby-*":[
+											"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
+
+											"*-baby-*",
+
+											"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
+											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
+										],
+						},
+						"priority": 1.83,
+						"seekingRange": 50,
+						"belowTempSeekingRange": 30,
+						"movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+						"whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+					},
+					{
+						"code": "wander",
+						"priority": 1,
+						"whenSwimming":false,
+						"movespeedByType": {
+							"*-baby-*":0.008,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2.25,
+							"*-adult-*":2.1,
+						},
+						"priorityForCancel": 1.35,
+						"chance": 0.005,
+						"animation": "Walk",
+						"preferredLightLevel": 20,
+						"duringDayTimeFrames": [
+							{"fromHour": 18, "toHour": 19},
+						],
+						"whenNotInEmotionState": "aggressiveondamage",
+					},
+					{
+                        "code": "idle",
+                        "animation": "Sit",
+                        "priority": 1.2,
+                        "minduration": 20000,
+                        "maxduration": 240000,
+                        "mincooldown": 6000,
+                        "maxcooldown": 12000,
+                        "priorityForCancel": 1.28,
+                        "duringDayTimeFrames": [
+                            {"fromHour": 4,"toHour": 6},
+                            {"fromHour": 8,"toHour": 10},
+                            {"fromHour": 12,"toHour": 16}
+                        ],
+                        "stopOnNearbyEntityCodes": ["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+                        "ceratopsidae-*", "tyrannosauridae-*",
+                        "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+                        "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
+                        "chelonoidis-*",
+                        ],
+                        "stopRange": 20,
+                        "animationSpeed": 1,
+                        "stopOnHurt": true,
+                        "whenNotInEmotionState": "aggressiveondamage|fleeondamage",
+                        "soundRepeatMs": 5000
+                    },
+                    {
+                        "code": "idle",
+                        "animation": "Lie",
+                        "priority": 1.18,
+                        "minduration": 30000,
+                        "maxduration": 240000,
+                        "mincooldown": 6000,
+                        "maxcooldown": 12000,
+                        "priorityForCancel": 1.28,
+                        "duringDayTimeFrames": [
+                            {"fromHour": 4.5,"toHour": 6},
+                            {"fromHour": 8.5,"toHour": 10},
+                            {"fromHour": 12.5,"toHour": 16}
+                        ],
+                        "stopOnNearbyEntityCodes": ["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+                        "ceratopsidae-*", "tyrannosauridae-*",
+                        "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+                        "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
+                        "chelonoidis-*",
+                        ],
+                        "stopRange": 10,
+                        "animationSpeed": 1,
+                        "stopOnHurt": true,
+                        "whenNotInEmotionState": "aggressiveondamage|fleeondamage",
+                        "soundRepeatMs": 5000
+                    },
+					{
+                        "code": "idle",
+                        "animation": "Sleep",
+                        "priority": 1.15,
+                        "minduration": 200000,
+                        "maxduration": 800000,
+                        "mincooldown": 1000,
+                        "maxcooldown": 3000,
+                        "priorityForCancel": 1.28,
+                        "duringDayTimeFrames": [
+                            {"fromHour": 5,"toHour": 6},
+                            {"fromHour": 9,"toHour": 10},
+                            {"fromHour": 12.75,"toHour": 16}
+                        ],
+                        "stopOnNearbyEntityCodes": ["player"],
+                        "stopRange": 1,
+                        "animationSpeed": 1,
+                        "stopOnHurt": true,
+                        "whenNotInEmotionState": "aggressiveondamage",
+                        "soundRepeatMs": 2000
+                    },
+                    {
+                        "code": "lookaround",
+                        "animation": "Look",
+                        "whenSwimming":false,
+                        "priority": 0.5,
+                        "animationSpeed": 0.75,
+                        "whenNotInEmotionState": "aggressiveondamage|fleeondamage",
+                    },
+                    {
+                        "code": "idle",
+                        "animation": "Roar",
+                        "priority": 1,
+                        "priorityForCancel": 1.35,
+                        "minduration": 4667,
+                        "maxduration": 4667,
+                        "chance": 0.01,
+                        "preferredLightLevel": 0,
+                        "mincooldown": 150000,
+                        "maxcooldown": 500000,
+                        "animationSpeed": 1,
+                        "soundByType": {"*-adult-*":"creature/roar","*-baby-*":"creature/hurt",},
+                        "soundRangeByType": {"*-adult-*":120,"*-baby-*":40,},
+                        "whenNotInEmotionState": "aggressiveondamage|fleeondamage"
+                    },
+
+                    {
+                        "code": "fleeentity",
+                        "animation": "Run",
+                        "entityCodes":["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+                        "ceratopsidae-*", "tyrannosauridae-*",
+                        "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+                        "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+                        ],
+                        "priorityByType": {"*-adult-*":0.8,"*-baby-*":1.8,},
+
+                        "seekingRange": 5,
+                        "movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+						"whenInEmotionState":"fleeondamage",
+
+                    },
+                    {
+                        "code": "fleeentity",
+                        "animation": "Run",
+                        "entityCodes": ["player", "bear-*", "drifter-*", "hyena-*", "moose-*", "pig-*", "wolf-male", "wolf-female",
+
+                        "ceratopsidae-triceratops-adult-*", "ceratopsidae-pentaceratops-adult-*", "ceratopsidae-styracosaurus-adult-*", "ceratopsidae-centrosaurus-adult-*", "ceratopsidae-nasutoceratops-adult-*", "ceratopsidae-pachyrhinosaurus-adult-*",
+						"tyrannosauridae-*",
+                        "elephantidae-*", "cervidae-*","pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "ursidae-*",
+                        "cockatrice-*", "direwolf-*", "golem-*", "hellboar-*",
+                        ],
+                        "priorityByType": {"*-adult-*":0,"*-baby-*":1.8,},
+                        "seekingRange": 25,
+                        "movespeedByType": {"*-adult-*":0.05,"*-baby-*":0.035},
+						"animationSpeedByType": {"*-adult-*":1.5,"*-baby-*":2.5},
+
+                    },
+                    {
+                        "code": "fleeentity",
+                        "animation": "Run",
+                        "entityCodes": [
+						 "ceratopsidae-triceratops-adult-*", "ceratopsidae-pentaceratops-adult-*", "ceratopsidae-styracosaurus-adult-*", "ceratopsidae-centrosaurus-adult-*", "ceratopsidae-nasutoceratops-adult-*", "ceratopsidae-pachyrhinosaurus-adult-*",
+						"tyrannosauridae-tyrannosaurus-adult-*", "tyrannosauridae-tarbosaurus-adult-*","tyrannosauridae-nanuqsaurus-adult-*","tyrannosauridae-albertosaurus-adult-*","tyrannosauridae-gorgosaurus-adult-*","tyrannosauridae-alioramus-adult-*","tyrannosauridae-qianzhousaurus-adult-*",
+                        ],
+                        "priorityByType": {"*-adult-*":1,"*-baby-*":0,},
+                        "priorityForCancel":1.1,
+                        "seekingRange": 25,
+                        "movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+
+                    },
+					{
+						"code": "seekfoodandeat",
+                        "animation": "Walk",
+						"eatAnimation": "Eat",
+						"eatAnimationLooseItems": "Eat",
+						"priority": 1.5,
+						"eatSound": "game:creature/animal-eat1",
+						"eatTime": 1.5,
+						"minduration": 4000,
+						"maxduration": 4000,
+						"animation": "Eat",
+						"movespeedByType": {
+							"*-baby-*":0.008,
+							"*-spinosaurus-adult-*":0.03,
+							"*-oxalaia-adult-*":0.035,
+							"*-baryonyx-adult-*":0.04,
+							"*-suchomimus-adult-*":0.05,
+							"*-ichthyovenator-adult-*":0.05,
+							"*-irritator-adult-*":0.06,
+						},
+						"animationSpeedByType": {"*-adult-*":1.5,"*-baby-*":2.25},
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "stayclosetoentity",
+						"animation": "Run",
+						"priority": 1.4,
+						"entityCodeByType": {
+							"*-baby-*": "spinosauridae-{type}-adult-female"},
+						"movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+						"maxDistance": 12,
+						"searchRange": 30,
+
+					},
+					{
+						"code": "fishmovefast",
+						"animation": "Swim",
+						"priority": 1.0,
+						"priorityForCancel": 1.5,
+						"movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+					},
+					{
+                        "code": "getoutofwater",
+                        "animation": "Swim",
+                        "priority": 1,
+                        "movespeedByType": {
+							"*-baby-*":0.03,
+							"*-spinosaurus-adult-*":0.055,
+							"*-oxalaia-adult-*":0.06,
+							"*-baryonyx-adult-*":0.065,
+							"*-suchomimus-adult-*":0.07,
+							"*-ichthyovenator-adult-*":0.07,
+							"*-irritator-adult-*":0.075,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-spinosaurus-adult-*":1.6,
+							"*-spinosaurus-adult-*":1.65,
+							"*-oxalaia-adult-*":1.7,
+							"*-baryonyx-adult-*":1.8,
+							"*-suchomimus-adult-*":1.9,
+							"*-ichthyovenator-adult-*":1.9,
+							"*-irritator-adult-*":2,
+						},
+                    },
+
+				]
+            },
+
+			{"code": "pettable","minGeneration": 4},
+			{"code": "ropetieable","minGeneration": 4},
+
+        ],
+	"spawnconditions": {
+		"worldgen": {
+			"tryOnlySurface": true,
+			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*", "game:water-*"],
+			"groupSizeByType": {
+				"*-adult-male":{ "dist": "uniform","avg": 1,"var": 1},
+				"*-adult-female":{ "dist": "uniform","avg": 1,"var": 1},
+				"*-baby-*":{ "dist": "uniform","avg": 3,"var": 5},
+			},
+			"companionsByType":{
+				"*-adult-male":["spinosauridae:spinosauridae-{type}-adult-male"],
+				"*-adult-female":["spinosauridae:spinosauridae-{type}-adult-male", "spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male"],
+				"*-baby-*":["spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male"],
+			},
+
+		},
+		"runtime": {
+			"group": "hostile",
+			"TriesPerChunk": { "avg": 0.00001, "var": 0 },
+			"MinDistanceToPlayer": 70,
+			"tryOnlySurface": true,
+			"chanceByType": {
+				"*-adult-*": 0.00001,"*-baby-*": 0.00001,
+				"*":0.00,
+			},
+			"maxQuantity": 1,
+			"maxLightLevel": 7,
+			"lightLevelType": "onlyBlockLight",
+			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*", "game:water-*"],
+			"groupSizeByType": {
+				"*-adult-male":{ "dist": "uniform","avg": 1,"var": 1},
+				"*-adult-female":{ "dist": "uniform","avg": 1,"var": 1},
+				"*-baby-*":{ "dist": "uniform","avg": 3,"var": 5},
+			},
+			"companionsByType":{
+				"*-adult-male":["spinosauridae:spinosauridae-{type}-adult-male"],
+				"*-adult-female":["spinosauridae:spinosauridae-{type}-adult-male", "spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male"],
+				"*-baby-*":["spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female","spinosauridae:spinosauridae-{type}-baby-male"],
+			},
+		}
+	},
+    "spawnconditionsByType": {
+			"*-spinosaurus-adult-*": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.2,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.1,
+					"maxForest": 0.8,
+					"maxShrubs": 0.8,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+			"*-oxalaia-adult-*": {
+				"climate": {
+					"minTemp": 18,
+					"maxTemp": 35,
+					"minRain": 0.3,
+					"maxRain": 0.7,
+					"minForestOrShrubs": 0.2,
+					"maxForest": 0.9,
+					"maxShrubs": 0.9,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+			"*-baryonyx-adult-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 30,
+					"minRain": 0.3,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.8,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+			"*-suchomimus-adult-*": {
+				"climate": {
+					"minTemp": 22,
+					"maxTemp": 38,
+					"minRain": 0.1,
+					"maxRain": 0.5,
+					"minForestOrShrubs": 0.1,
+					"maxForest": 0.6,
+					"maxShrubs": 0.6,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+			"*-ichthyovenator-adult-*": {
+				"climate": {
+					"minTemp": 25,
+					"maxTemp": 40,
+					"minRain": 0.0,
+					"maxRain": 0.3,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.4,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+			"*-irritator-adult-*": {
+				"climate": {
+					"minTemp": 22,
+					"maxTemp": 37,
+					"minRain": 0.2,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.7
+				},
+			},
+		}
+    },
+    "soundsByType": {
+		"*":{
+			"hurt": "creature/hurt",
+			"death": "creature/death",
+			"idle": "creature/idle"
+		},
+		"idleSoundChance": 0.01
+	}
+}
