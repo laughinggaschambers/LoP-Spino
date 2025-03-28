@@ -748,7 +748,7 @@
 		},
 		"runtime": {
 			"group": "hostile",
-			"TriesPerChunk": { "avg": 0.00001, "var": 0 },
+			"TriesPerChunk": { "avg": 0.0, "var": 0 },
 			"MinDistanceToPlayer": 70,
 			"tryOnlySurface": true,
 			"chanceByType": {
