@@ -179,7 +179,7 @@
 				"spawnEntityCodesByType": {
 					"*": [ { "code":"spinosauridae:spinosauridae-{type}-egg-raw"}]},
 				"requiresNearbyEntityCodeByType": {
-					"*-adult-female": "spinosauridae:spinosauridae-{type}-adult-male"},
+					"*": "spinosauridae:spinosauridae-{type}-adult-male"},
 				"requiresNearbyEntityRange": 20,
 				"spawnQuantityMin": 6,
 				"spawnQuantityMaxByType": {"*": 12},
