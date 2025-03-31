@@ -202,8 +202,8 @@
 			{"code": "emotionstates",
 				"states": [
 					{"code": "aggressiveondamage","duration": 60,"chanceByType": {"*-adult-*": 1,"*-baby-*": 0.0},"slot": 2,"priority": 3,"accumType": "noaccum"},
-					{"code": "fleeondamage","duration": 60,"slot": 2,"chanceByType": {"*-adult-*": 1,"*-baby-*": 1},"priority": 2,"accumType": "max","whenHealthRelBelow": 0.75},
-					{"code": "fleeondamage","duration": 30,"slot": 2,"chanceByType": {"*-adult-*": 0.0,"*-baby-*": 1},"priority": 0.75,"accumType": "max","whenHealthRelBelow": 1},
+					{"code": "fleeondamage","duration": 60,"slot": 2,"chanceByType": {"*-adult-*": 1,"*-baby-*": 1},"priority": 2,"accumType": "max","whenHealthRelBelow": 0.5},
+					{"code": "fleeondamage","duration": 30,"slot": 2,"chanceByType": {"*-adult-*": 0.0,"*-baby-*": 1},"priority": 0.75,"accumType": "max","whenHealthRelBelow": 0.5},
 					{"code": "alarmherdondamage","chance": 1,"slot": 1,"priority": 1.5,"accumType": "max"},
 					{"code": "saturated","duration": 1200,"chance": 1,"slot": 0,"priority": 1,"accumType": "sum"},
 					{ "code": "aggressivearoundentities", "duration": 60, "chanceByType": {"*-baby-*": 0.0,"*-adult-*": 1.0}, "slot": 2, "priority": 5, "entityCodes": ["spinosauridae:spinosauridae-{type}-baby-male","spinosauridae:spinosauridae-{type}-baby-female"], "maxGeneration": 5 }
@@ -216,23 +216,14 @@
                         "code": "meleeattack",
                         "animation": "Attack",
                         "entityCodesByType": {
-							"*-adult-*":
+							"*":
 								[
 									"player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
 
-									"ceratopsidae-*", "tyrannosauridae-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
-								],
-							"*-baby-*":
-								[
-									"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
-
-									"*-baby-*",
-
-									"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
-									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
 								],
 
 							},
@@ -276,23 +267,14 @@
                         "code": "meleeattack",
                         "animation": "Attack",
                         "entityCodesByType": {
-							"*-adult-*":
+							"*":
 								[
 									"player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "salmon", "bass",
 
-									"ceratopsidae-*", "tyrannosauridae-*",
+									"ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
-								],
-							"*-baby-*":
-								[
-									"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
-
-									"*-baby-*",
-
-									"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
-									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
 								],
 
 							},
@@ -346,7 +328,11 @@
 							"*-baby-*":[
 											"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
 
-											"*-baby-*",
+											"ceratopsidae-triceratops-baby-*", "ceratopsidae-pentaceratops-baby-*", "ceratopsidae-styracosaurus-baby-*", "ceratopsidae-centrosaurus-baby-*", "ceratopsidae-nasutoceratops-baby-*", "ceratopsidae-pachyrhinosaurus-baby-*",
+
+											"ankylosauria-ankylosaurus-baby-*","ankylosauria-tarchia-baby-*","ankylosauria-euoplocephalus-baby-*","ankylosauria-edmontonia-baby-*","ankylosauria-ankylosaurus-baby-*","ankylosauria-pinacosaurus-baby-*","ankylosauria-antarctopelta-baby-*","ankylosauria-struthiosaurus-baby-*",
+
+											"tyrannosauridae-tyrannosaurus-baby-*", "tyrannosauridae-tarbosaurus-baby-*", "tyrannosauridae-nanuqsaurus-baby-*", "tyrannosauridae-albertosaurus-baby-*", "tyrannosauridae-gorgosaurus-baby-*","tyrannosauridae-alioramus-baby-*","tyrannosauridae-qianzhousaurus-baby-*",
 
 											"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
 											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
@@ -391,7 +377,11 @@
 							"*-baby-*":[
 											"player","chicken-*","gazelle-*","goat-*","sheep-*","pig-*","hare-*","deer-*","raccoon-*","moose-*","wolf-pup",
 
-											"*-baby-*",
+											"ceratopsidae-triceratops-baby-*", "ceratopsidae-pentaceratops-baby-*", "ceratopsidae-styracosaurus-baby-*", "ceratopsidae-centrosaurus-baby-*", "ceratopsidae-nasutoceratops-baby-*", "ceratopsidae-pachyrhinosaurus-baby-*",
+
+											"ankylosauria-ankylosaurus-baby-*","ankylosauria-tarchia-baby-*","ankylosauria-euoplocephalus-baby-*","ankylosauria-edmontonia-baby-*","ankylosauria-ankylosaurus-baby-*","ankylosauria-pinacosaurus-baby-*","ankylosauria-antarctopelta-baby-*","ankylosauria-struthiosaurus-baby-*",
+
+											"tyrannosauridae-tyrannosaurus-baby-*", "tyrannosauridae-tarbosaurus-baby-*", "tyrannosauridae-nanuqsaurus-baby-*", "tyrannosauridae-albertosaurus-baby-*", "tyrannosauridae-gorgosaurus-baby-*","tyrannosauridae-alioramus-baby-*","tyrannosauridae-qianzhousaurus-baby-*",
 
 											"cervidae-*", "cervinae-*", "bovinae-*", "capreolinae-*", "dinornithidae-*",
 											"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "faunling-*", "foal-*", "geodecrab-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*",
@@ -440,6 +430,14 @@
 						"duringDayTimeFrames": [
 							{"fromHour": 18, "toHour": 19},
 						],
+						"stopOnNearbyEntityCodes": ["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+
+                        "ceratopsidae-*", "spinosauridae-*","ankylosauria-*",
+
+                        "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+                        "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
+                        "chelonoidis-*",
+                        ],
 						"whenNotInEmotionState": "aggressiveondamage",
 					},
 					{
@@ -544,7 +542,9 @@
                         "code": "fleeentity",
                         "animation": "Run",
                         "entityCodes":["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
-                        "ceratopsidae-*", "tyrannosauridae-*",
+
+                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*"
+
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
                         ],
@@ -576,10 +576,14 @@
                     {
                         "code": "fleeentity",
                         "animation": "Run",
-                        "entityCodes": ["player", "bear-*", "drifter-*", "hyena-*", "moose-*", "pig-*", "wolf-male", "wolf-female",
+                        "entityCodes": ["player", "bear-*", "drifter-*", "hyena-*", "moose-*", "wolf-male", "wolf-female",
 
                         "ceratopsidae-triceratops-adult-*", "ceratopsidae-pentaceratops-adult-*", "ceratopsidae-styracosaurus-adult-*", "ceratopsidae-centrosaurus-adult-*", "ceratopsidae-nasutoceratops-adult-*", "ceratopsidae-pachyrhinosaurus-adult-*",
-						"tyrannosauridae-*",
+
+                        "ankylosauria-ankylosaurus-adult-*","ankylosauria-tarchia-adult-*","ankylosauria-euoplocephalus-adult-*","ankylosauria-edmontonia-adult-*","ankylosauria-ankylosaurus-adult-*","ankylosauria-pinacosaurus-adult-*","ankylosauria-antarctopelta-adult-*","ankylosauria-struthiosaurus-adult-*",
+
+						"tyrannosauridae-tyrannosaurus-adult-*", "tyrannosauridae-tarbosaurus-adult-*","tyrannosauridae-nanuqsaurus-adult-*","tyrannosauridae-albertosaurus-adult-*","tyrannosauridae-gorgosaurus-adult-*","tyrannosauridae-alioramus-adult-*","tyrannosauridae-qianzhousaurus-adult-*",
+
                         "elephantidae-*", "cervidae-*","pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "ursidae-*",
                         "cockatrice-*", "direwolf-*", "golem-*", "hellboar-*",
                         ],
@@ -593,8 +597,11 @@
                         "code": "fleeentity",
                         "animation": "Run",
                         "entityCodes": [
+
 						 "ceratopsidae-triceratops-adult-*", "ceratopsidae-pentaceratops-adult-*", "ceratopsidae-styracosaurus-adult-*", "ceratopsidae-centrosaurus-adult-*", "ceratopsidae-nasutoceratops-adult-*", "ceratopsidae-pachyrhinosaurus-adult-*",
+
 						"tyrannosauridae-tyrannosaurus-adult-*", "tyrannosauridae-tarbosaurus-adult-*","tyrannosauridae-nanuqsaurus-adult-*","tyrannosauridae-albertosaurus-adult-*","tyrannosauridae-gorgosaurus-adult-*","tyrannosauridae-alioramus-adult-*","tyrannosauridae-qianzhousaurus-adult-*",
+
                         ],
                         "priorityByType": {"*-adult-*":1,"*-baby-*":0,},
                         "priorityForCancel":1.1,
@@ -752,7 +759,7 @@
 			"MinDistanceToPlayer": 70,
 			"tryOnlySurface": true,
 			"chanceByType": {
-				"*-adult-*": 0.00001,"*-baby-*": 0.00001,
+				"*-adult-*": 0.00001,"*-baby-*": 0.00000,
 				"*":0.00,
 			},
 			"maxQuantity": 1,
