@@ -1,0 +1,72 @@
+[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "spinosauridae:entities/land/spinosauridae",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck", "Torso", "Body", "Body Back", "Tail", "Tail 1", "Tail 2","Tail 3",],
+        "Head": ["Head", "Top Jaw", "Lower Jar"],
+        "Arm": ["ArmR","ArmL","WristL","WristR"],
+        "Leg": ["LegL", "LegL2", "LegL3","LegR", "LegR2", "LegR3"],
+        "Critical": ["Chin"],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "spinosauridae:entities/land/spinosauridae",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck", "Torso", "Body", "Tail Main", "Tail", "Tail 1", "Tail 2","Tail 3",],
+        "Head": ["Head", "Top Jaw", "Lower Jar"],
+        "Arm": ["ArmR","ArmL","WristL","WristR"],
+        "Leg": ["LegL", "LegL2", "LegL3","LegR", "LegR2", "LegR3"],
+        "Critical": ["Chin"],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "spinosauridae:entities/land/spinosauridae",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 1.5,
+        "CriticalDamageMultiplier": 2,
+        "DefaultResists": {"BluntAttack": 7, "SlashingAttack": 5, "PiercingAttack": 0}
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "spinosauridae:entities/land/spinosauridae",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 1.5,
+        "CriticalDamageMultiplier": 2,
+        "DefaultResists": {"BluntAttack": 7, "SlashingAttack": 5, "PiercingAttack": 0}
+      }
+    }
+  }
+]

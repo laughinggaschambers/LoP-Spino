@@ -16,7 +16,7 @@
 			"*-irritator-adult-male": {"x": 3,"y": 3},"*-irritator-adult-female": {"x": 3,"y": 3},"*-irritator-baby-*": {"x": 0.7,"y": 0.7},
 		},
 
-    "deadhitBoxSizeByType": {"*-adult-*":{	"x": 3,"y": 3},"*-baby-*":{	"x": 1,"y": 1}},
+    "deadhitBoxSizeByType": {"*-adult-*":{	"x": 2,"y": 2},"*-baby-*":{	"x": 1,"y": 1}},
     "eyeHeightByType": {"*":3},
     "weightByType": {"*-adult-*":4000,"*-baby-*":10},
     "knockbackResistanceByType": {"*-adult-*": 2,"*-baby-*": 1	},
