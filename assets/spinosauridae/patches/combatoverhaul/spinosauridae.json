@@ -8,11 +8,11 @@
     "value": {
       "code": "CombatOverhaul:EntityColliders",
       "elements": {
-        "Torso": ["Neck", "Torso", "Body", "Body Back", "Tail", "Tail 1", "Tail 2","Tail 3",],
-        "Head": ["Head", "Top Jaw", "Lower Jar"],
+        "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back","Tail Main", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
+        "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
         "Arm": ["ArmR","ArmL","WristL","WristR"],
-        "Leg": ["LegL", "LegL2", "LegL3","LegR", "LegR2", "LegR3"],
-        "Critical": ["Chin"],
+        "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+        "Critical": ["Eyes2"],
         "Resistant": []
       }
     }
@@ -26,11 +26,11 @@
     "value": {
       "code": "CombatOverhaul:EntityColliders",
       "elements": {
-        "Torso": ["Neck", "Torso", "Body", "Tail Main", "Tail", "Tail 1", "Tail 2","Tail 3",],
-        "Head": ["Head", "Top Jaw", "Lower Jar"],
+        "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back","Tail Main", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
+        "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
         "Arm": ["ArmR","ArmL","WristL","WristR"],
-        "Leg": ["LegL", "LegL2", "LegL3","LegR", "LegR2", "LegR3"],
-        "Critical": ["Chin"],
+        "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+        "Critical": ["Eyes2"],
         "Resistant": []
       }
     }
@@ -46,8 +46,8 @@
       "damageModel": {
         "TorsoDamageMultiplier": 1,
         "LimbsDamageMultiplier": 0.75,
-        "HeadDamageMultiplier": 1.5,
-        "CriticalDamageMultiplier": 2,
+        "HeadDamageMultiplier": 2.5,
+        "CriticalDamageMultiplier": 25,
         "DefaultResists": {"BluntAttack": 7, "SlashingAttack": 5, "PiercingAttack": 0}
       }
     }

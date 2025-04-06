@@ -2,10 +2,8 @@
   "type": "content",
   "modid": "spinosauridae",
   "name": "Legacy of the Phanerozoic: Sailed Spine",
-  "author": "laughinggas",
+  "authors": [ "laughinggas" ],
   "description": "Adds severals spinosaurids to Vintage Story",
-  "version": "1.0.7",
-  "dependency": {
-    "game": "1.5.4"
-  }
+  "version": "1.0.8",
+  "side": "Universal"
 }
