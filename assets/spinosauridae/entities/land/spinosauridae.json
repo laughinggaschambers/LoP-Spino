@@ -194,7 +194,7 @@
 					"*-baby-*": true,
 					"*": false
 				},
-				"hoursToGrowByType": {"*": 150},
+				"hoursToGrowByType": {"*": 600},
 				"adultEntityCodesByType": {
 					"*-baby-male": ["spinosauridae:spinosauridae-{type}-adult-male"],
 					"*-baby-female": ["spinosauridae:spinosauridae-{type}-adult-female"]
