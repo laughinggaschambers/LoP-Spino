@@ -149,15 +149,6 @@
 
 		],
 		"spawnconditions": {
-            "climate": {
-                    "minTemp": 10,
-                    "maxTemp": 40,
-                    "minRain": 0.1,
-                    "maxRain": 0.9,
-                    "minForestOrShrubs": 0.0,
-                    "minY": 0.9,
-                    "maxY": 1.2
-                },
             "worldgen": {
                 "tryOnlySurface": true,
                 "insideBlockCodes": [
@@ -171,7 +162,7 @@
                 "groupSizeByType": {
 					"*": { "dist": "uniform", "avg": 1.5, "var": 0 }
 				},
-                "*":["spinosauridae:spinosauridae-{type}-adult-female"]},
+                "*":["spinosauridae:spinosauridae-{type}-adult-female","spinosauridae:spinosauridae-{type}-adult-male"]},
 
 			"runtime": {
 				"group": "neutral",
@@ -195,8 +186,106 @@
                     "game:soil-*"
                 ],
 				"companionsByType": {
-				"*":["spinosauridae:spinosauridae-{type}-adult-female"]}
+				"*":["spinosauridae:spinosauridae-{type}-adult-female","spinosauridae:spinosauridae-{type}-adult-male"]}
 			}
 		},
+		"spawnconditionsByType": {
+			"*-spinosaurus-*": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.4,
+					"maxRain": 1.0,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.8,
+					"minY": 0.7,
+					"maxY": 1.4
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+			"*-oxalaia-*": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.5,
+					"maxRain": 1.0,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.7,
+					"maxY": 1.4
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+			"*-baryonyx-*": {
+				"climate": {
+					"minTemp": 10,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.6,
+					"maxShrubs": 0.8,
+					"minY": 0.8,
+					"maxY": 1.5
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+			"*-suchomimus-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 35,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 0.8,
+					"maxShrubs": 0.7,
+					"minY": 0.7,
+					"maxY": 1.4
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+			"*-ichthyovenator-*": {
+				"climate": {
+					"minTemp": 15,
+					"maxTemp": 40,
+					"minRain": 0.5,
+					"maxRain": 1.0,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.8,
+					"minY": 0.7,
+					"maxY": 1.4
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+			"*-irritator-*": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.4,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.7,
+					"maxShrubs": 0.8,
+					"minY": 0.7,
+					"maxY": 1.4
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
+				}
+			},
+		}
 	}
 }

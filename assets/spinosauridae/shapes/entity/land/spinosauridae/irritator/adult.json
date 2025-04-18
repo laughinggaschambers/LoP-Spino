@@ -334,6 +334,13 @@
 																										}
 																									]
 																								}
+																							],
+																							"attachmentpoints": [
+																								{
+																									"code": "FaceAP",
+																									"posX": "0.0","posY": "0.0","posZ": "0.0",
+																									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+																								}
 																							]
 																						},
 																						{
@@ -2009,6 +2016,13 @@
 																						"down": { "texture": "#irritator-adult", "uv": [ 242.0, 0.0, 252.2, 7.0 ], "snapUv": false }
 																					}
 																				}
+																			],
+																			"attachmentpoints": [
+																				{
+																					"code": "HeadAP",
+																					"posX": "0.0","posY": "0.0","posZ": "0.0",
+																					"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+																				}
 																			]
 																		}
 																	]
@@ -2023,6 +2037,11 @@
 									"attachmentpoints": [
 										{
 											"code": "rope",
+											"posX": "0.0","posY": "0.0","posZ": "0.0",
+											"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+										},
+										{
+											"code": "NeckAP",
 											"posX": "0.0","posY": "0.0","posZ": "0.0",
 											"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 										}
@@ -2680,6 +2699,23 @@
 									]
 								}
 							]
+						}
+					],
+					"attachmentpoints": [
+						{
+							"code": "Center",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+						},
+						{
+							"code": "Rider",
+							"posX": "4.0","posY": "4.0","posZ": "10.0",
+							"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
+						},
+						{
+							"code": "MidAP",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 						}
 					]
 				},

@@ -1,6 +1,14 @@
 {
   "game:creaturegroup-spinosauridae": "Spinosauridae",
 
+  "item-spinowearable-saddle": "Saddle made for spinosaurids",
+  "item-spinowearable-bridle1": "Bridle made for spinosaurids",
+  "itemdesc-spinowearable-bridle1": "Useful for precise, short distance travel",
+  "item-spinowearable-bridle2": "Bridle made for spinosaurids",
+  "itemdesc-spinowearable-bridle2": "Useful for long distance travel",
+  "item-handbooktitle-spinowearable-bridle2": "How to Use",
+  "item-handbooktext-spinowearable-bridle2": "When your mount is wearing a curb bit, you need only press forward once, rather than hold it down, to move.",
+
   "item-creature-spinosauridae-spinosaurus-adult-male": "Spinosaurus (Male)",
   "item-creature-spinosauridae-spinosaurus-adult-female": "Spinosaurus (Female)",
   "item-creature-spinosauridae-spinosaurus-baby-male": "Spinosaurus (Juvenile Male)",
