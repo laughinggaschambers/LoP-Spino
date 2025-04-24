@@ -1996,6 +1996,38 @@
 																									}
 																								}
 																							]
+																						},
+																						{
+																							"name": "Flap",
+																							"from": [ 3.0, 5.0, 0.3 ],
+																							"to": [ 9.0, 13.0, 0.8 ],
+																							"uv": [ 0.0, 247.0 ],
+																							"rotationOrigin": [ 3.0, 5.0, 0.3 ],
+																							"rotationZ": -47.0,
+																							"faces": {
+																								"north": { "texture": "#irritator-adult", "uv": [ 0.0, 247.5, 6.0, 255.5 ] },
+																								"east": { "texture": "#irritator-adult", "uv": [ 6.0, 247.5, 6.5, 255.5 ] },
+																								"south": { "texture": "#irritator-adult", "uv": [ 6.5, 247.5, 12.5, 255.5 ] },
+																								"west": { "texture": "#irritator-adult", "uv": [ 12.5, 247.5, 13.0, 255.5 ] },
+																								"up": { "texture": "#irritator-adult", "uv": [ 0.0, 247.0, 6.0, 247.5 ] },
+																								"down": { "texture": "#irritator-adult", "uv": [ 6.0, 247.0, 12.0, 247.5 ] }
+																							}
+																						},
+																						{
+																							"name": "Flap2",
+																							"from": [ 3.0, 5.0, 5.3 ],
+																							"to": [ 9.0, 13.0, 5.8 ],
+																							"uv": [ 0.0, 247.0 ],
+																							"rotationOrigin": [ 3.0, 5.0, 5.3 ],
+																							"rotationZ": -47.0,
+																							"faces": {
+																								"north": { "texture": "#irritator-adult", "uv": [ 0.0, 248.0, 6.0, 256.0 ] },
+																								"east": { "texture": "#irritator-adult", "uv": [ 6.0, 248.0, 7.0, 256.0 ] },
+																								"south": { "texture": "#irritator-adult", "uv": [ 7.0, 248.0, 13.0, 256.0 ] },
+																								"west": { "texture": "#irritator-adult", "uv": [ 13.0, 248.0, 14.0, 256.0 ] },
+																								"up": { "texture": "#irritator-adult", "uv": [ 0.0, 247.0, 6.0, 248.0 ] },
+																								"down": { "texture": "#irritator-adult", "uv": [ 6.0, 247.0, 12.0, 248.0 ] }
+																							}
 																						}
 																					]
 																				},

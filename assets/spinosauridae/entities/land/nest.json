@@ -150,7 +150,9 @@
 		],
 		"spawnconditions": {
             "worldgen": {
+				"chanceByType": {"*-empty": 0.0},
 				"triesPerChunk": { "avg": 0.0, "var": 0},
+				"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 },
                 "tryOnlySurface": true,
                 "insideBlockCodes": [
                     "game:air",
@@ -170,6 +172,7 @@
 				"tryOnlySurface": true,
 				"chanceByType": {"*-incubating": 0.00001,"*": 0.0},
 				"TriesPerChunk": { "avg": 0.0, "var": 0 },
+				"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 },
 				"mindistancetoplayer": 50,
 				"maxLightLevel": 7,
 				"spawnCapPlayerScaling": 0.0,
@@ -190,7 +193,7 @@
 			}
 		},
 		"spawnconditionsByType": {
-			"*-spinosaurus-*": {
+			"*-spinosaurus-nest-incubating": {
 				"climate": {
 					"minTemp": 20,
 					"maxTemp": 40,
@@ -209,7 +212,7 @@
 					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
 				}
 			},
-			"*-oxalaia-*": {
+			"*-oxalaia-nest-incubating": {
 				"climate": {
 					"minTemp": 20,
 					"maxTemp": 40,
@@ -228,7 +231,7 @@
 					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
 				}
 			},
-			"*-baryonyx-*": {
+			"*-baryonyx-nest-incubating": {
 				"climate": {
 					"minTemp": 10,
 					"maxTemp": 35,
@@ -247,7 +250,7 @@
 					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
 				}
 			},
-			"*-suchomimus-*": {
+			"*-suchomimus-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 35,
@@ -266,7 +269,7 @@
 					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
 				}
 			},
-			"*-ichthyovenator-*": {
+			"*-ichthyovenator-nest-incubating": {
 				"climate": {
 					"minTemp": 15,
 					"maxTemp": 40,
@@ -285,7 +288,7 @@
 					"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 }
 				}
 			},
-			"*-irritator-*": {
+			"*-irritator-nest-incubating": {
 				"climate": {
 					"minTemp": 20,
 					"maxTemp": 40,
