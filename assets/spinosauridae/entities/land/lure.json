@@ -1,0 +1,68 @@
+{
+	"code": "lure",
+	"class": "EntityAgent",
+	"variantgroups": [
+		{"code": "size","states": ["big","small"]},
+	],
+	"hitBoxSize": {	"x":1,"y": 1},
+	"knockbackResistanceByType": {
+		"*": 100
+	},	
+	"eyeHeight": 0.6,
+	"weightByType": {
+		"*": 1000
+	},
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"*-big": {"base": "item/lure-big"},
+			"*-small": {"base": "item/lure-small"},
+		},
+		"sizeByType": {
+			"*-big": 2,
+			"*-small": 1,
+		},
+		"behaviors": [
+			{"code": "controlledphysics","stepHeight": 0},
+			{"code": "interpolateposition" },
+			{"code": "floatupwhenstuck","onlyWhenDead": true}
+
+		],
+		"animations": [
+		]
+	},
+	"server": {
+		"attributes": {
+		},
+		"behaviors": [
+			{"code": "controlledphysics","stepHeight": 0},
+			{"code": "health","maxhealthByType": {
+				"*-big": 50,
+				"*-small": 10,
+				}
+			},
+			{"code": "deaddecay","hoursToDecay": 0,"decayedBlock": "none"},
+			{"code": "floatupwhenstuck","onlyWhenDead": true},
+			{"code": "emotionstates","states": []},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"minduration": 3000,
+						"maxduration": 3000,
+						"mincooldown": 0,
+						"maxcooldown": 0,
+						"stopOnNearbyEntityCodes": [ ],
+						"stopRange": 15,
+						"animation": "Idle",
+						"animationSpeed": 2.0,
+					}
+				]
+			}
+
+		],
+	}
+}
