@@ -17,7 +17,7 @@
   "itemdesc-creature-lure-big": "High probability of luring a carnivorous dinosaur up to 100 blocks away",
   "itemdesc-creature-lure-small": "Good probability of luring a carnivorous dinosaur up to 30 blocks away",
   "item-creature-hitch": "Dinosaur Hitching Post",
-  "itemdesc-creature-lure-big": "Domesticated adult dinosaur(s) will stay put where the hitch placed",
+  "itemdesc-creature-hitch": "Domesticated adult dinosaur(s) will stay put where the hitch placed",
 
   "item-creature-spinosauridae-spinosaurus-adult-male": "Spinosaurus (Male)",
   "item-creature-spinosauridae-spinosaurus-adult-female": "Spinosaurus (Female)",
