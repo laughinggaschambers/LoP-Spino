@@ -331,7 +331,7 @@
         ]
     },
     "server": {
-		"attributes": {"pathfinder": {"minTurnAnglePerSec": 15,"maxTurnAnglePerSec": 60}},
+		"attributes": {"pathfinder": {"minTurnAnglePerSec": 60,"maxTurnAnglePerSec": 120}},
         "behaviors": [
 			{"code": "rideable", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
 			{"code": "selectionboxes", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
@@ -350,12 +350,12 @@
             {"code": "floatupwhenstuck","onlyWhenDead": true},
             {"code": "health",
                     "maxhealthByType": {
-                        "*-spinosaurus-adult-male": 200,"*-spinosaurus-adult-female": 200,"*-spinosaurus-baby-*": 15,
-                        "*-oxalaia-adult-male": 190,"*-oxalaia-adult-female": 180,"*-oxalaia-baby-*": 14,
-                        "*-suchomimus-adult-male": 180,"*-suchomimus-adult-female": 170,"*-suchomimus-baby-*": 13,
-                        "*-baryonyx-adult-male": 170,"*-baryonyx-adult-female": 170,"*-baryonyx-baby-*": 12,
-                        "*-ichthyovenator-adult-male": 170,"*-ichthyovenator-adult-female": 170,"*-ichthyovenator-baby-*": 12,
-                        "*-irritator-adult-male": 160,"*-irritator-adult-female": 150,"*-irritator-baby-*": 11,
+                        "*-spinosaurus-adult-male": 200,"*-spinosaurus-adult-female": 200,"*-spinosaurus-baby-*": 8,
+                        "*-oxalaia-adult-male": 190,"*-oxalaia-adult-female": 180,"*-oxalaia-baby-*": 7,
+                        "*-suchomimus-adult-male": 180,"*-suchomimus-adult-female": 170,"*-suchomimus-baby-*": 7,
+                        "*-baryonyx-adult-male": 170,"*-baryonyx-adult-female": 170,"*-baryonyx-baby-*": 6,
+                        "*-ichthyovenator-adult-male": 170,"*-ichthyovenator-adult-female": 170,"*-ichthyovenator-baby-*": 6,
+                        "*-irritator-adult-male": 160,"*-irritator-adult-female": 150,"*-irritator-baby-*": 5,
                     }
 			},
             {"code": "deaddecay","hoursToDecay": 96,"decayedBlockByType": {"*-adult-*": "carcass-large","*-baby-*": "carcass-small"}},
@@ -836,7 +836,7 @@
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
                         ],
-                        "priorityByType": {"*-adult-*":0.8,"*-baby-*":1.8,},
+                        "priorityByType": {"*-adult-*":1.8,"*-baby-*":1.8,},
 
                         "seekingRange": 5,
                         "movespeedByType": {
@@ -1147,7 +1147,7 @@
 		"worldgen": {
 			"chanceByType": {"*-baby-*": 0.0},
 			"maxQuantityByGroup": { "code": "spinosauridae-*", "maxQuantity": 1 },
-			"triesPerChunk": { "avg": 0.001, "var": 0},
+			"triesPerChunk": { "avg": 0.0008, "var": 0},
 			"tryOnlySurface": true,
 			"insideBlockCodes": ["game:air","game:tallgrass-*","game:gravel-*","game:sand-*","game:snowlayer-1","game:soil-*", "game:water-*", "game:saltwater-*"],
 			"groupSizeByType": {
