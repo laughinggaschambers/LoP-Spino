@@ -7,13 +7,40 @@
     "path": "/client/behaviors/-",
     "value": {
       "code": "CombatOverhaul:EntityColliders",
-      "elements": {
-        "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
-        "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
-        "Arm": ["ArmR","ArmL","WristL","WristR"],
-        "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
-        "Critical": ["Eyes2"],
-        "Resistant": []
+      "elementsByType":
+      {
+        "*-suchomimus-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*-baryonyx-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*-irritator-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
       }
     }
   },
@@ -25,13 +52,40 @@
     "path": "/server/behaviors/-",
     "value": {
       "code": "CombatOverhaul:EntityColliders",
-      "elements": {
-        "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
-        "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
-        "Arm": ["ArmR","ArmL","WristL","WristR"],
-        "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
-        "Critical": ["Eyes2"],
-        "Resistant": []
+      "elementsByType":
+      {
+        "*-suchomimus-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*-baryonyx-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*-irritator-*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail3","Sail5",],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
+        "*":{
+          "Torso": ["Neck","Neck1","Neck2","Neck3","Neck4", "Torso", "Body", "Body Back", "Tail", "Tail2","Tail3","Tail4","Tail5","Tail6","Tail13","Sail","Sail2","Sail3","Sail4","Sail5","Sail6","Sail7","Sail8"],
+          "Head": ["Head", "Top Jaw", "Lower Jar","Cube13","Cube14","Cube25","Cube22","Cube17","Cube9","Cube10","Cube11","Cube20","Chin2","Chin3"],
+          "Arm": ["ArmR","ArmL","WristL","WristR"],
+          "Leg": ["LegL", "LegL1","LegL2", "FootL","LegR", "LegR2", "LegR3","FootR",],
+          "Critical": ["Eyes2"],
+          "Resistant": []
+        },
       }
     }
   },
