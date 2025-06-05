@@ -705,7 +705,7 @@
 							"*-ichthyovenator-adult-*":1.9,
 							"*-irritator-adult-*":2,
 						},
-						"whenInEmotionState": "aggressivearoundentities|aggressiveondamage",
+						"whenInEmotionState": "aggressiveondamage",
 					},
 
 
