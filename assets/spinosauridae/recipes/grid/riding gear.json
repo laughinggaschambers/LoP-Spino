@@ -22,7 +22,7 @@
 			"P": { type: "item", code: "game:plank-*", name: "wood" },
 			"M": { type: "item", code: "game:metalplate-*", name: "bronze", "quantity": 3,allowedVariants: ["bismuthbronze", "blackbronze","tinbronze"]  },
 			"L": { type: "item", code: "game:leather-normal-*", name: "leather" },
-			"N": { type: "item", code: "game:metalnailsandstrips-bronze", name: "nail", "quantity":1},
+			"N": { type: "item", code: "game:metalnailsandstrips-*", name: "nail", "quantity":1,allowedVariants: ["bismuthbronze", "blackbronze","tinbronze"]},
 		},
 		name: "tyrannobridle",
 		width: 3,
