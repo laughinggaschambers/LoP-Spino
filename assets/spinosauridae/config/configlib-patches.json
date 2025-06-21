@@ -64,15 +64,14 @@
     },
     "boolean":{
       "spinosauridae:entities/land/spinosauridae.json": {
-        "/server/behaviors/0/enabledByType/*-suchomimus-adult-*": "ridable",
-        "/client/behaviors/0/enabledByType/*-suchomimus-adult-*": "ridable",
+        "/server/behaviors/3/enabledByType/*-suchomimus-adult-*": "ridable",
+        "/client/behaviors/3/enabledByType/*-suchomimus-adult-*": "ridable",
 
-        "/server/behaviors/0/enabledByType/*-baryonyx-adult-*": "ridable",
-        "/client/behaviors/0/enabledByType/*-baryonyx-adult-*": "ridable",
+        "/server/behaviors/3/enabledByType/*-baryonyx-adult-*": "ridable",
+        "/client/behaviors/3/enabledByType/*-baryonyx-adult-*": "ridable",
 
-        "/server/behaviors/0/enabledByType/*-irritator-adult-*": "ridable",
-        "/client/behaviors/0/enabledByType/*-irritator-adult-*": "ridable",
-
+        "/server/behaviors/3/enabledByType/*-irritator-adult-*": "ridable",
+        "/client/behaviors/3/enabledByType/*-irritator-adult-*": "ridable",
         }
     }
   },
@@ -115,5 +114,6 @@
       "ingui": "setting-ridable",
       "default": true,
     },
+
   ]
 }

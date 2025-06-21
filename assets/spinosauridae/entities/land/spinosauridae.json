@@ -8,12 +8,12 @@
     ],
     "fallDamageMultiplierByType": { "*-baby-*" :1,"*-adult-*" :6},
     "hitBoxSizeByType": {
-			"*-spinosaurus-adult-male": {"x": 3,"y": 5},"*-spinosaurus-adult-female": {"x": 3,"y": 5},"*-spinosaurus-baby-*": {"x": 0.7,"y": 0.7},
-			"*-oxalaia-adult-male": {"x": 3,"y": 4.5},"*-oxalaia-adult-female": {"x": 3,"y": 4.5},"*-oxalaia-baby-*": {"x": 0.7,"y": 0.7},
-			"*-suchomimus-adult-male": {"x": 3,"y": 4},"*-suchomimus-adult-female": {"x": 3,"y": 4},"*-suchomimus-baby-*": {"x": 0.7,"y": 0.7},
-			"*-baryonyx-adult-male": {"x": 3,"y": 4},"*-baryonyx-adult-female": {"x": 3,"y": 4},"*-baryonyx-baby-*": {"x": 0.7,"y": 0.7},
-			"*-ichthyovenator-adult-male": {"x": 3,"y": 3.5},"*-ichthyovenator-adult-female": {"x": 3,"y": 3.5},"*-ichthyovenator-baby-*": {"x": 0.7,"y": 0.7},
-			"*-irritator-adult-male": {"x": 3,"y": 3},"*-irritator-adult-female": {"x": 3,"y": 3},"*-irritator-baby-*": {"x": 0.7,"y": 0.7},
+			"*-spinosaurus-adult-*": {"x": 2.5,"y": 5},"*-spinosaurus-baby-*": {"x": 0.7,"y": 0.7},
+			"*-oxalaia-adult-*": {"x": 2.3,"y": 4.5},"*-oxalaia-baby-*": {"x": 0.7,"y": 0.7},
+			"*-suchomimus-adult-*": {"x": 2,"y": 4},"*-suchomimus-baby-*": {"x": 0.7,"y": 0.7},
+			"*-baryonyx-adult-*": {"x": 2,"y": 4},"*-baryonyx-baby-*": {"x": 0.7,"y": 0.7},
+			"*-ichthyovenator-adult-*": {"x": 2,"y": 3.5},"*-ichthyovenator-baby-*": {"x": 0.7,"y": 0.7},
+			"*-irritator-adult-*": {"x": 2,"y": 3},"*-irritator-baby-*": {"x": 0.7,"y": 0.7},
 		},
 
     "deadhitBoxSizeByType": {"*-adult-*":{	"x": 2,"y": 2},"*-baby-*":{	"x": 1,"y": 1}},
@@ -292,6 +292,9 @@
 			"*-irritator-adult-male": 0.6,"*-irritator-adult-female": 0.5,"*-irritator-baby-*": 0.6,
 		},
         "behaviors": [
+			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 10 },
+			{"code": "selectionboxes", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
+			{"code": "rideableaccessories", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
 			{"code": "rideable", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
             {"code": "repulseagents" },
 			{"code": "controlledphysics","stepHeightByType":
@@ -308,9 +311,6 @@
 			{"code": "multiply", "enabledByType": { "*-adult-female": true, "*": false } },
 			{"code": "despawn","minPlayerDistance": 8,"belowLightLevel": 8,"minSeconds": 300},
 			{"code": "ropetieable","minGeneration": 4},
-			{"code": "selectionboxes", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
-			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 10 },
-			{"code": "rideableaccessories", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
         ],
         "animations": [
             {"code": "attack","animation": "Attack","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
@@ -333,10 +333,10 @@
     "server": {
 		"attributes": {"pathfinder": {"minTurnAnglePerSec": 60,"maxTurnAnglePerSec": 120}},
         "behaviors": [
-			{"code": "rideable", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
-			{"code": "selectionboxes", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
 			{"code": "ownable", "enabledByType": { "*-baby-*": false,"*": true},"minGeneration": 3 },
+			{"code": "selectionboxes", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
 			{"code": "rideableaccessories", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
+			{"code": "rideable", "enabledByType": { "*-suchomimus-adult-*":true,"*-baryonyx-adult-*":true,"*-irritator-adult-*":true,"*-baby-*": false, "*": false},"minGeneration": 3 },
             {"code": "repulseagents" },
             {"code": "controlledphysics","stepHeightByType":
 				{
