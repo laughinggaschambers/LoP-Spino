@@ -1,0 +1,175 @@
+[
+{
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-spinosaurus-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-spinosaurus-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-spinosaurus-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-spinosaurus-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-oxalaia-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-oxalaia-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-oxalaia-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-oxalaia-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-suchomimus-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-suchomimus-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-suchomimus-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-suchomimus-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-baryonyx-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-baryonyx-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-baryonyx-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-baryonyx-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-ichthyovenator-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-ichthyovenator-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-ichthyovenator-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-ichthyovenator-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-irritator-adult"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-irritator-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "C": {"type": "item", "code": "game:hammer-*", "isTool": true},
+            "D": {"type": "item", "code": "spinosauridae:pelt-irritator-baby"},
+            "E": {"type": "item", "code": "game:metalnailsandstrips-*"},
+            "F": {"type": "item", "code": "game:clay-*"},
+            "G": {"type": "block", "code": "game:debarkedlog-*"},
+            "H": {"type": "block", "code": "game:glass-*"},
+            "I": {"type": "item", "code": "game:powder-borax"}
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:headmount-irritator-baby", "quantity": 1}
+    },
+]

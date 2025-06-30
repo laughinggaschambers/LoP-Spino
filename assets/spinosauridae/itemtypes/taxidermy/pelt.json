@@ -1,0 +1,164 @@
+{
+	"code": "pelt",
+		"behaviors": [
+		{ "name": "GroundStorable", "properties": { "layout": "SingleCenter"}}
+	],
+  "variantgroups": [
+    {"code": "species","states": ["spinosaurus","oxalaia","suchomimus","baryonyx","ichthyovenator","irritator"]},
+    {"code": "type","states": [ "baby","adult" ]},
+],
+  "shapebytype": {
+    "*-baby": {
+      "base": "item/spinosauridae/pelt-baby"
+    },
+    "*-adult": {
+      "base": "item/spinosauridae/{species}/pelt"
+    }
+  },
+  "texturesByType": {
+	"*":{"skin":{"base": "entity/{species}-adult"}},
+  },
+	"creativeinventory": { "general": ["*"], "items": ["*"] },
+	"maxstacksize": 64,
+	"attributes": {
+		"handbook": {"groupBy": ["floorpelt-*"]},
+		"displaycaseable": false, 
+		"shelvable": false,
+		"antlerMountableByType": {
+			"*": true
+		},
+		"onAntlerMountTransformByType": {
+			"*-spinosaurus-*":{
+				"translation": { "x": 0.0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": -90 },
+				"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+				"scale": 1.0
+			},
+			"*-oxalaia-*":{
+						"translation": { "x": 0.0, "y": 1, "z": 0 },
+						"rotation": { "x": 0, "y": 0, "z": -90 },
+						"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+						"scale": 0.9
+					},
+
+			"*-suchomimus-*":{
+						"translation": { "x": 0.0, "y": 1, "z": 0 },
+						"rotation": { "x": 0, "y": 0, "z": -90 },
+						"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+						"scale": 0.85
+					},
+
+			"*-baryonyx-*":{
+						"translation": { "x": 0.0, "y": 1, "z": 0 },
+						"rotation": { "x": 0, "y": 0, "z": -90 },
+						"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+						"scale": 0.8
+					},
+
+			"*-ichthyovenator-*":{
+						"translation": { "x": 0.0, "y": 1, "z": 0 },
+						"rotation": { "x": 0, "y": 0, "z": -90 },
+						"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+						"scale": 0.7
+					},
+
+			"*-irritator-*":{
+						"translation": { "x": 0.0, "y": 1, "z": 0 },
+						"rotation": { "x": 0, "y": 0, "z": -90 },
+						"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+						"scale": 0.6
+					},
+			"*": {
+					"translation": { "x": 0.0, "y": 1, "z": 0 },
+					"rotation": { "x": 0, "y": 0, "z": -90 },
+					"origin": { "x": 0.1, "y": 0.0, "z": 0.5 },
+				}
+		},
+		"groundStorageTransformByType": {
+			"*-spinosaurus-*":{
+				"translation": { "x": 0, "y": 0.0, "z": -0.0 },
+				"rotation": { "x": 0, "y": 90, "z": 0 },
+				"scale": 1.0
+			},
+			"*-oxalaia-*":{
+						"translation": { "x": 0, "y": -0.05, "z": -0.0 },
+						"rotation": { "x": 0, "y": 90, "z": 0 },
+						"scale": 0.9
+					},
+
+			"*-suchomimus-*":{
+						"translation": { "x": 0, "y": -0.05, "z": -0.0 },
+						"rotation": { "x": 0, "y": 90, "z": 0 },
+						"scale": 0.85
+					},
+
+			"*-baryonyx-*":{
+						"translation": { "x": 0, "y": -0.05, "z": -0.0 },
+						"rotation": { "x": 0, "y": 90, "z": 0 },
+						"scale": 0.8
+					},
+
+			"*-ichthyovenator-*":{
+						"translation": { "x": 0, "y": -0.10, "z": -0.0 },
+						"rotation": { "x": 0, "y": 90, "z": 0 },
+						"scale": 0.7
+					},
+
+			"*-irritator-*":{
+						"translation": { "x": 0, "y": -0.15, "z": -0.0 },
+						"rotation": { "x": 0, "y": 90, "z": 0 },
+						"scale": 0.6
+					},
+			"*":{
+				"translation": { "x": 0, "y": 0.0, "z": -0.0 },
+				"rotation": { "x": 0, "y": 90, "z": 0 },
+			}
+		}
+	},
+  "sounds": {
+    "walk": "game:walk/cloth"
+  },
+	"materialDensity": 500,
+	"heldTpHitAnimation": "breaktool",
+	"fpHandTransform": {
+		"translation": { "x": 0, "y": -0.5, "z": -1.5 },
+		"rotation": { "x": 180, "y": 0, "z": 90 },
+		"scale": 1
+	},
+	"guiTransformByType": {
+		"*-adult": {
+			"translation": {"x": 0,"y": 1,"z": 0},
+			"rotation": {"x": 0,"y": 145,"z": 90},
+			"origin": {"x": 0.5,"y": 0.1,"z": 0.5},
+			"scale": 0.5
+		},
+		"*": {
+			"translation": {"x": 0,"y": 1,"z": 0},
+			"rotation": {"x": 0,"y": 145,"z": 90},
+			"origin": {"x": 0.5,"y": 0.1,"z": 0.5},
+			"scale": 1
+		}
+	},
+	"tpHandTransformByType": {
+		"*-adult":{
+			"translation": { "x": -0.55, "y": -0.1, "z": -0.45 },
+			"rotation": { "x": -90, "y": 90, "z": 0 },
+			"origin": { "x": 0.1, "y": 0, "z": 0.2 },
+			"scale": 0.2
+		},
+		"*":{
+			"translation": { "x": -0.55, "y": -0.1, "z": -0.45 },
+			"rotation": { "x": -90, "y": 90, "z": 0 },
+			"origin": { "x": 0.3, "y": -0, "z": 0.3 },
+			"scale": 0.5
+		},
+	},
+		"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.0, "z": 0.5299 },
+		"scale": 2
+	}
+	
+
+}

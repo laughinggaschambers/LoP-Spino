@@ -1,0 +1,119 @@
+{
+  "code": "headmount",
+	"maxstacksize": 4,
+  "variantgroups": [
+    {"code": "species","states": ["spinosaurus","oxalaia","suchomimus","baryonyx","ichthyovenator","irritator"]},
+    {"code": "type","states": [ "baby","adult" ]},
+  ],
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "headmount-*" ]
+    },
+		"antlerMountableByType": {
+			"*": true
+		},
+		"onAntlerMountTransformByType": {
+            "*-spinosaurus-*":{
+				"translation": { "x": -0.9, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 180, "z": 0 },
+				"origin": { "x": 1, "y": 0.5, "z": 0.5 },
+				"scale": 1.0
+			},
+            "*-oxalaia-*":{
+                        "translation": { "x": -0.9, "y": 0, "z": 0 },
+                        "rotation": { "x": 0, "y": 180, "z": 0 },
+                        "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+                        "scale": 0.9
+                    },
+
+            "*-suchomimus-*":{
+                        "translation": { "x": -0.9, "y": 0, "z": 0 },
+                        "rotation": { "x": 0, "y": 180, "z": 0 },
+                        "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+                        "scale": 0.85
+                    },
+
+            "*-baryonyx-*":{
+                        "translation": { "x": -0.9, "y": 0, "z": 0 },
+                        "rotation": { "x": 0, "y": 180, "z": 0 },
+                        "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+                        "scale": 0.8
+                    },
+
+            "*-ichthyovenator-*":{
+                        "translation": { "x": -0.9, "y": 0, "z": 0 },
+                        "rotation": { "x": 0, "y": 180, "z": 0 },
+                        "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+                        "scale": 0.7
+                    },
+
+            "*-irritator-*":{
+                        "translation": { "x": -0.9, "y": 0, "z": 0 },
+                        "rotation": { "x": 0, "y": 180, "z": 0 },
+                        "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+                        "scale": 0.6
+                    },
+			"*": {
+              "translation": { "x": -0.9, "y": 0, "z": 0 },
+              "rotation": { "x": 0, "y": 180, "z": 0 },
+              "origin": { "x": 1, "y": 0.5, "z": 0.5 },
+              "scale": 1
+			}
+		}
+  },
+  "shapebytype": {
+    "*": {"base": "item/spinosauridae/{species}/headmount-{type}"}
+  },
+  "creativeinventory": {"general": [ "*" ], "decorative": [ "*" ]
+  },
+  "texturesByType": {
+	"*":{"skin":{"base": "entity/{species}-adult"}},
+  },
+  "combustibleProps": {
+    "burnTemperature": 400,
+    "burnDuration": 10
+  },
+  "sounds": {
+    "place": "game:block/cloth",
+    "walk": "game:walk/cloth"
+  },
+  "guiTransformByType": {
+    "*-adult": {
+			"translation": {"x": 0,"y": 3,"z": 0},
+            "rotation": {"x": 0,"y": -60,"z": 180},
+            "origin": {"x": 1,"y": 0.6,"z": 0.5},
+			"scale": 0.5
+		},
+    "*": {
+        "translation": {"x": 0,"y": 3,"z": 0},
+        "rotation": {"x": 0,"y": -60,"z": 180},
+        "origin": {"x": 1,"y": 0.6,"z": 0.5},
+        "scale": 1.0
+      }
+  },
+  "groundTransform": {
+    "translation": {"x": 0.5,"y": 0,"z": 0},
+    "rotation": {"x": 0,"y": 135,"z": 0},
+    "origin": {"x": 0.5,"y": -0.02,"z": 0.5},
+    "scale": 2
+  },
+  "tpHandTransformByType": {
+    "*-adult": {
+			"translation": { "x": -1.1, "y": -0.5, "z": -0.5 },
+            "rotation": { "x": 0, "y": 180, "z": 0 },
+            "origin": { "x": -0, "y": -0, "z": -0 },
+            "scale": 0.3
+		},
+		"*": {
+			"translation": { "x": -1.1, "y": -0.5, "z": -0.5 },
+            "rotation": { "x": 0, "y": 180, "z": 0 },
+            "origin": { "x": -0, "y": -0, "z": -0 },
+            "scale": 1.0
+		},
+  },
+  "fpHandTransform": {
+    "rotation": {"x": 0,"y": 0,"z": 0},
+    "origin": {"x": 0.5,"y": -1,"z": 1.5}
+  },
+  "materialDensity": 200
+}

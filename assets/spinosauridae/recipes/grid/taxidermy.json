@@ -1,0 +1,175 @@
+[
+{
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-spinosaurus-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-spinosaurus-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-spinosaurus-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-spinosaurus-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-oxalaia-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-oxalaia-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-oxalaia-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-oxalaia-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-suchomimus-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-suchomimus-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-suchomimus-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-suchomimus-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-baryonyx-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-baryonyx-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-baryonyx-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-baryonyx-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-ichthyovenator-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-ichthyovenator-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-ichthyovenator-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-ichthyovenator-baby", "quantity": 1}
+    },
+
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-irritator-adult"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-irritator-adult", "quantity": 1}
+    },
+    {
+        "ingredientPattern": "_BC,DEF,GHI",
+        "ingredients": {
+            "B": { "type": "item", "code": "game:hammer-*", "isTool": true },
+            "C": { "type": "item", "code": "game:knife-*", "isTool": true },
+            "D": { "type": "item", "code": "spinosauridae:pelt-irritator-baby"},
+            "E": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 1 },
+            "F": { "type": "item", "code": "game:clay-*", "quantity": 4 },
+            "G": { "type": "block", "code": "game:debarkedlog-*", "quantity": 1 },
+            "H": { "type": "block", "code": "game:glass-*" },
+            "I": { "type": "item", "code": "game:powder-borax", "quantity": 1 }
+        }, "width": 3, "height": 3,
+        "output": {"type": "item", "code": "spinosauridae:taxidermy-irritator-baby", "quantity": 1}
+    },
+]

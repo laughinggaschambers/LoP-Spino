@@ -389,22 +389,9 @@
 					},
 					{
 						"type": "item",
-						"code": "game:hide-raw-huge",
+						"code": "spinosauridae:pelt-{type}-{age}",
 						"quantityByType": {
-							"*-spinosaurus-adult-*": {"avg": 5,"var": 0}, "*-spinosaurus-baby-*": {"avg": 0,"var": 0},
-							"*-oxalaia-adult-*": {"avg": 4,"var": 0}, "*-oxalaia-baby-*": {"avg": 0,"var": 0},
-							"*-baryonyx-adult-*": {"avg": 3,"var": 0}, "*-baryonyx-baby-*": {"avg": 0,"var": 0},
-							"*-suchomimus-adult-*": {"avg":2,"var": 0}, "*-suchomimus-baby-*": {"avg": 0,"var": 0},
-							"*-ichthyovenator-adult-*": {"avg": 2,"var": 0}, "*-ichthyovenator-baby-*": {"avg": 0,"var": 0},
-							"*-irritator-adult-*": {"avg": 1,"var": 0}, "*-irritator-baby-*": {"avg": 0,"var": 0},
-						}
-					},
-					{
-						"type": "item",
-						"code": "game:hide-raw-small",
-						"quantityByType": {
-							"*-baby-*": {"avg": 1.0,"var": 0.0},
-							"*": {"avg": 0.0,"var": 0.0}
+							"*": {"avg": 1,"var": 0},
 						}
 					},
 				]
